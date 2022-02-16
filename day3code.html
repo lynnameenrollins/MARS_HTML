@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        
+    <h1>In Class Examples</h1><br><br>
+    <h2>Input</h2><br><br>
+    <!--text is single line input-->
+    <table>
+        <tr>
+            <td><label for ="firstname">First Name:</label></td>
+            <td><input type="text" id="firstname" name="firstname" placeholder="enter user name"/> </td>
+        </tr>
+    <tr>
+        <td><label for ="pwd">Password: </label> </td>
+        <td><input type="password" id="pwd" name="pwd" placeholder="enter password"/></td>
+    </tr>
+    
+</table>
+
+<hr>
+
+    <h2>Radio Buttons</h2><br><br>
+    <table>
+        <tr>
+            
+           <td><input type="radio" id="html" name="fav_language" value="HTML" /></td> 
+           <td><label for="html">HTML</label></td> 
+        </tr>
+        <tr> 
+            <td><input type="radio" id="css" name="fav_language" value="CSS" /></td>
+            <td><label for="css">CSS</label></td>
+        </tr>
+        <tr>
+            <td><input type="radio" id="javascript" name="fav_language" value="JavaScript" /></td>
+            <td><label for="javascript">JavaScript</label></td>
+        </tr> 
+        </table><br>
+        <hr>
+
+        <!--to display in one row--> <br>
+        <table>
+        <tr>
+            
+            <td><input type="radio" id="html" name="fav_language" value="HTML" checked /></td> 
+            <td><label for="html">HTML</label></td> 
+         
+             <td><input type="radio" id="css" name="fav_language" value="CSS" /></td>
+             <td><label for="css">CSS</label></td>
+         
+             <td><input type="radio" id="javascript" name="fav_language" value="JavaScript" /></td>
+             <td><label for="javascript">JavaScript</label></td>
+         </tr>
+    </table>
+   
+
+<hr>
+
+    
+    <h2>Checkboxes</h2><br>
+    <!--can select more than one option-->
+    <!-- checked will check by default-->
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" checked >
+    <label for="vehicle1">I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2">I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3">I have a Boat</label><br>
+
+    <hr>
+<!-- submits the entire form-->
+    <label>Submit</label>
+    <!--the action will give the action that happens when submit is clicked-->
+    <form action="/home.html">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname" value="Mark"><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname" value="Spencer"><br>
+    <input type="submit" value="Submit"><br>
+<hr>
+<!--Drop downs-->
+    <label for="cars">Choose a Car:</label>
+    <select id="cars" name="cars">
+        <option>Select</option>
+        <option value="volvo">Volvo</option>
+        <option value="audi">Audi</option>
+        <option value="toyota">Toyota</option>
+    </select>
+    <hr>
+    <tr>
+        <td>
+            <label for="add">Address:</label>
+        </td>
+    
+         <td><textarea name= "add" rows="2" cols="15"> Type here </textarea></td>
+    </tr>
+    <hr>
+    
+
+
+    </form>
+    <fieldset>
+        <legend>Personal Information:</legend>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" value="Mark"><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" value="Spencer"><br>
+        <input type="submit" value="Submit"><br>
+
+    </fieldset>
+<hr>
+    <input type="button" name="btn1" value="click me" onclick="alert('Button Clicked')";>
+    
+<hr>
+
+<tr>
+    <td>
+        <!--data list allows the user to also type in their own input-->
+        <input list="browser"> 
+        <datalist id="browser">
+            <option value="IE">
+             <option value="Chrome">
+             <option value="Safari">   
+        </datalist>  
+    </td>
+</tr>
+<hr>
+<table>
+  
+<tr><td><label>File to Upload:</label></td><td><input type="file"></td></tr>
+<tr><td><label>Date:</label></td><td><input type="date"></td></tr>
+<tr><td><label>Email:</label></td><td><input type="email"></td> <!--will validate email--></tr></tr>
+<tr><td><label>Month:</label></td><td><input type="month"></td></tr>
+<tr><td><label>Number:</label></td><td><input type="number" min=5 max=25 value="7" step="2"></td></tr>
+<tr><td><label>Range:</label></td><td><input type="range"></td></tr>
+
+</table>
+</body>
+</html>
