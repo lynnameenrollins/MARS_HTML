@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML_assignment1</title>
+</head>
+<body>
+<form action="/details.html">
+    
+
+<h2><u>Monthly Expense Report</u></h2>
+<table>
+
+    <tr><td><label>Date:</label></td>
+    <td><input type="date" id="date" name="date"></td></tr>
+    
+    <tr><td><label>Mortgage:</label></td>
+    <td><input type="number" id="mortgage" name="mortgage" min="500" value="1000" step="25"></td></tr>
+
+    <tr><td><label>Gas:</label></td>
+    <td><input type="number" id="gas" name="gas" min="10" value="100"></td> </tr>
+
+    <tr><td><label>Child care:</label></td>
+    <td><input type="number" id="childCare" name="childCare" ></td></tr>
+
+    <tr><td><label>Insurance:</label></td>
+    <td><input type="number" id="insurance" name="insurance"> </td>
+    
+    <tr><td><input type="radio" id="monthly" name="frequency" value="monthly"></td>
+    <td><label for="monthly">Monthly</label></td> 
+    <td><input type="radio" id="yearly" name="frequency" value="yearly"></td>
+    <td><label for="yearly">Yearly</label></td> 
+    </tr>
+
+    <tr><td><label>Misc:</label></td>
+        <td>
+            <!--data list allows the user to also type in their own input-->
+            <input list="misc"> 
+            <datalist id="misc" name="misc">
+                <option value="Internet">
+                 <option value="Cable">
+                 <option value="Phone">   
+            </datalist>  
+        </td>
+    
+    <td><input type="number" id="misc" name="misc" min="0" value="0" ></td>
+    </tr>
+    
+    <tr><td><input type="submit" value="Save"></td></tr>
+
+    
+    </table>
+</form>
+
+</body>
+</html>
