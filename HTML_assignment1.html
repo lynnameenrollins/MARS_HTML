@@ -5,11 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML_assignment1</title>
+    
+<style>
+    .myDiv {
+      border: 5px outset rgb(6, 55, 75);
+      background-color: lightblue;    
+      text-align: center;
+    }
+    </style>
+    
+
 </head>
 <body>
 <form action="/details.html">
-    
+<div class="myDiv">
 <h2><u>Monthly Expense Report</u></h2>
+
 <table>
 
     <tr><td><label>Date:</label></td>
@@ -46,6 +57,7 @@
     
     <td><input type="number" id="misc" name="misc" min="0" value="0" ></td>
     </tr>
+
     
     <tr><td><input type="submit" value="Save"></td>
     <td><input type="reset" value= "Reset"></td></tr>
@@ -53,6 +65,6 @@
     
     </table>
 </form>
-
+</div> 
 </body>
 </html>
