@@ -1,0 +1,43 @@
+body{ background-color: rgb(218, 240, 247);
+    text-align: center;}
+a {text-decoration: none;
+color: green;
+
+}
+caption{
+    background-color: rgb(76, 45, 163);
+}
+table{
+    text-align: center;    
+    
+}
+th{
+    text-transform:capitalize ;
+}
+p{
+    text-align: center;
+    text-shadow: 2px 2px 4px rgb(68, 35, 99);
+
+}
+#p2{
+    background-color: aliceblue;
+
+}
+#p4{
+    background-color: aliceblue;
+
+}
+h2{
+    color: rgb(68, 49, 49);
+    text-shadow: 2px 2px 2px rgba(207, 178, 235, 0.062);
+}
+#myH2{
+    text-transform: uppercase;
+    text-align: center;
+    word-spacing: 4px;
+    text-shadow: 2px 2px 5px rgb(54, 25, 216);
+    
+}
+ol{
+    list-style-position:initial;
+}
