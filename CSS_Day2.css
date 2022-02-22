@@ -1,0 +1,42 @@
+*{
+    background-color: aquamarine;
+}
+ .fontred{
+    color: red;
+ }
+
+ .fontcaps{
+     text-transform: uppercase;
+ }
+
+ div.fontgreen{
+     color: green;
+ }
+p.fontgreen{
+    color:rgb(78, 19, 133);
+    font-style:oblique;
+    
+}
+ ol, p{
+     text-transform: capitalize;
+ }
+
+ div p{
+     background-color: aliceblue;
+ }
+
+ div > p{
+     font-style: italic;
+ }
+ span > p{
+     font-size: xx-small;
+ }
+
+ div + p{
+     text-transform: uppercase;
+ }
+
+ p ~div {
+     background-color: coral;
+     
+ }
