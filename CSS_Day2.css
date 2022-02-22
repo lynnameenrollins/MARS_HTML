@@ -1,9 +1,13 @@
+/* selects all elements*/
 *{
     background-color: aquamarine;
 }
+
+/*class is denoted by the '.' */
  .fontred{
     color: red;
  }
+
 
  .fontcaps{
      text-transform: uppercase;
@@ -39,4 +43,21 @@ p.fontgreen{
  p ~div {
      background-color: coral;
      
+ }
+
+ div.fontstyle{
+     background-color: beige;
+     
+     font-family: Sofia;
+     /*font-family: Georgia, 'Times New Roman', Times, serif;*/
+     font-style: oblique;
+     font-weight: 800;
+     font-size: 2em; /* 16 pixels is default*/
+     font-variant: small-caps;
+     
+     
+     /*
+     above can be written in shorthand 
+     font: oblique small-caps 2em Georgia;
+     */
  }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS_DAY2_HW.css">"
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+    <h1>Employee Interest Survey Form</h1>
+    <table>
+        <tr>
+            <td>
+            <label>Enter your name:</label>
+            </td> 
+            <td> 
+            <input type ="text" name="empName" id="empName" placeholder="enter your full name here" required>
+            </td> 
+        </tr>
+        <br>
+        <br>
+        <tr>
+            
+            <td>
+                <label>Enter your description:</label>
+                </td> 
+                <td> 
+                <input type="text" name="empDesc" id="empDesc">
+                </td> 
+        </tr>
+        <tr>
+            
+            <td>
+                <label>Tell us a little about yourself:</label>
+                </td> 
+                <td> 
+                <textarea name="aboutSelf" id="aboutSelf" rows="5" columns="80"></textarea></td>
+                </td> 
+        </tr>
+        <tr>
+            <td>
+                <label name="exercise">Do you exercise at home?</label>
+                <input type="radio" id="exer_yes" name="exercise" value="Yes" checked></td> 
+                <td><label for="exercise">Yes</label></td> 
+                <td><input type="radio" id="exer_no" name="exercise" value="No"></td> 
+                <td><label for="exercise">No</label></td> 
+            </td>
+        </tr>
+        </table>
+        <br>
+        <label name="read">How do you like to read about your favorite topic?</label><br>
+        <input type="checkbox" id="books" name="books" value="books">
+        <label for="books">Books</label>
+        <input type="checkbox" id="online" name="online" value="online">
+        <label for="Online Resources">Online Resources</label>
+        <input type="checkbox" id="phoneApps" name="phoneApps" value="phoneApps">
+        <label for="books">Phone apps</label>
+        <input type="checkbox" id="magazines" name="magazines" value="magazines">
+        <label for="books">Magazines</label>
+        <br>
+        <br>
+        <label name="movieGenre">What genre of movies do you like?</label>
+        <select>
+            <option>Comedy</option>
+            <option>Drama</option>
+            <option>Horror</option>
+            <option>Family</option>
+        </select>
+        <br>
+        
+        <input type="submit" value="Submit" onclick="alert('Thank you for submitting')">
+        <input type="reset" value= "Reset">
+
+      
+    </form>
+    
+    
+</body>
+</html>

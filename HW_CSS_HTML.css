@@ -1,23 +1,23 @@
-body{ background-color: rgb(218, 240, 247);
+body{ background-color: rgb(200, 199, 117);
     text-align: center;}
+    
 a {text-decoration: none;
 color: green;
 
 }
 caption{
-    background-color: rgb(76, 45, 163);
+    background-color: rgb(80, 23, 238);
 }
 table{
         text-align: center;
         margin: auto;    
-    
 }
 th{
     text-transform:capitalize ;
 }
 p{
     text-align: center;
-    text-shadow: 2px 2px 4px rgb(68, 35, 99);
+    text-shadow: 2px 2px 4px rgb(52, 35, 99);
     font-size: large;
 
 }
@@ -27,6 +27,14 @@ p{
 
 }
 
+p:nth-child(odd){
+    font-style: italic;
+}
+h1{
+    color:rgb(98, 155, 23);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow:1px 1px 1px whitesmoke
+}
 h2{
     color: rgb(68, 49, 49);
     text-shadow: 2px 2px 2px rgba(207, 178, 235, 0.062);
@@ -41,13 +49,16 @@ h2{
     
 }
 input:focus{
-    background-color: darkturquoise;
+    background-color: darkgoldenrod;
 }
 
 ol{
     list-style-position:initial;
     text-align: left;
 
+}
+ul{
+    text-align: left;
 }
 #nameList{
     text-align: left;
