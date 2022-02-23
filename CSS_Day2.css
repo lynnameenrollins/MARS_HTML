@@ -15,6 +15,7 @@
 
  div.fontgreen{
      color: green;
+     
  }
 p.fontgreen{
     color:rgb(78, 19, 133);
@@ -34,16 +35,32 @@ p.fontgreen{
  }
  span > p{
      font-size: xx-small;
- }
+     /* margin-left: 50px;
+     margin-right: 50px; */
+     margin: 50px 50px 50px 50px;
+     /* padding-left: 10 px; */
+ }  
 
  div + p{
      text-transform: uppercase;
  }
 
  p ~div {
-     background-color: coral;
-     
+     background-color: rgb(118, 80, 255);
+     background-color: hsla(100, 77%, 54%, 0.2);    
  }
+#p2{
+
+    background-color: rgb(71, 71, 133);
+   
+
+}
+
+#colorDemo{
+    border-width: thick;
+    border-color: crimson;
+    background-color: rgba(118,80, 255, 0.3);
+}
 
  div.fontstyle{
      background-color: beige;
@@ -61,3 +78,20 @@ p.fontgreen{
      font: oblique small-caps 2em Georgia;
      */
  }
+ body{
+     background-image:url(images/small-bee-md.png);
+     background-repeat: repeat-x;
+     background-size: 250px;
+     background-attachment: fixed;
+ }
+ 
+ table{
+     /* border-width: 1rem; */
+     border-width: thick;
+     border-style: groove;
+     border-color: red green blue yellow;
+     /* shorthand: border: width style color */
+    
+ }
+ 
+ 
