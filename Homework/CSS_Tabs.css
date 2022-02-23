@@ -1,0 +1,19 @@
+button{
+    background-color: rgb(10,85,90);
+    inline-size: 32%;
+    height:3rem;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: aliceblue;
+}
+
+button:active{
+    background-color: blue;
+}
+
+iframe {
+    background-color: rgb(10,85,90);
+    inline-size: 100%;
+}

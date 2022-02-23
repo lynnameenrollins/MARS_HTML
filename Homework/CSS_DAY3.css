@@ -1,0 +1,76 @@
+body{
+    background-color: rgb(19, 50, 93);
+}
+
+.mytabs{
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25 px;;
+}
+.mytabs input[type="radio"]{
+    display: none;
+   
+}
+
+.mytabs label{
+    background-color: rgb(135, 160, 182);
+    width:33%;
+    height: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mytabs .tabContent{
+    width: 100%;
+    padding: 25px;
+    background-color: rgb(214, 228, 240);
+    order:1;
+    display: none;
+}
+
+.mytabs .tab h2{
+    font-size: 3em;
+} 
+
+.mytabs input[type="radio"]:checked + label + .tabContent{
+    display: inline;
+}
+
+/*will change color for tab that is 'on' */
+.mytabs input[type="radio"]:checked + label{
+    background-color: rgb(214, 228, 240);
+}
+
+.mytabs input[type="radio"]:hover + label{
+    background-color: rgb(68, 51, 3);
+}
+
+#Tab1 {
+    height:500px;
+    background-image:url(dirty-pattern-paint-room-block.jpg);
+    font-size: large;
+
+}
+#Tab2{
+    height:500px;
+    background-image:url(abstract_blue.jpg);
+    text-emphasis-color: white;
+    color:aliceblue;
+    font-size: large;
+
+
+    
+}
+
+#tab2Link{
+    color:blanchedalmond;
+}
+
+#Tab3{
+    height:400px;
+    background-image:url(unsplash8.jpg8.jpg);
+    background-size:cover;
+    font-size: large;
+}
