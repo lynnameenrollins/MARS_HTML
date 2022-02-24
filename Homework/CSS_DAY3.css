@@ -2,6 +2,7 @@ body{
     background-color: rgb(19, 50, 93);
 }
 
+/* Flexbox to display containers in a horizontal row  */
 .mytabs{
     display:flex;
     flex-wrap: wrap;
@@ -14,6 +15,7 @@ body{
    
 }
 
+/* Formting each tab */
 .mytabs label{
     background-color: rgb(135, 160, 182);
     width:33%;
@@ -22,18 +24,23 @@ body{
     text-align: center;
 }
 
+/* This is formating each tab content page*/
 .mytabs .tabContent{
     width: 100%;
-    padding: 25px;
-    background-color: rgb(214, 228, 240);
+    padding: 30px;
+    /* background-color: rgb(214, 228, 240); */
     order:1;
     display: none;
 }
-
+/* setting the font size for the Header's in each tab's content */
 .mytabs .tab h2{
     font-size: 3em;
 } 
 
+/* This is saying for the checked radio button,
+look to the very next label, then the very next tabcontent
+Then display that inline.  Basically it is selecting the content of the 
+selected radio button to display*/
 .mytabs input[type="radio"]:checked + label + .tabContent{
     display: inline;
 }
@@ -43,10 +50,12 @@ body{
     background-color: rgb(214, 228, 240);
 }
 
+/* changes color for the tab when the mouse hovers over it*/
 .mytabs input[type="radio"]:hover + label{
     background-color: rgb(68, 51, 3);
 }
 
+/* Just some formatting for what is in each tab's content box */
 #Tab1 {
     height:500px;
     background-image:url(dirty-pattern-paint-room-block.jpg);
@@ -59,8 +68,6 @@ body{
     text-emphasis-color: white;
     color:aliceblue;
     font-size: large;
-
-
     
 }
 
