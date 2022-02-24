@@ -1,0 +1,32 @@
+
+.parent{
+    height: 40px;
+}
+a {text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+}
+.tab{
+ /* display and float work similarly */
+ /* display: inline-block; */
+ float: left;
+ background: rgb(117, 86, 167);
+ height: 100%;
+ width: 32%;
+ border: 1px;
+ box-sizing: border-box;
+ padding: 10px;
+ text-align: center;
+
+}
+
+
+.tab:active{
+    background-color:aliceblue;
+}
+
+.tab:hover{
+ background-color: rgb(71, 10, 170);
+}
+
