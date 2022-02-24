@@ -3,9 +3,9 @@
     height: 40px;
 }
 a {text-decoration: none;
-    color: black;
+    color: rgb(5, 1, 10);
     font-weight: bold;
-    
+    text-shadow: 2px 2px 5px;
 }
 .tab{
  /* display and float work similarly */
@@ -14,19 +14,24 @@ a {text-decoration: none;
  background: rgb(117, 86, 167);
  height: 100%;
  width: 32%;
- border: 1px;
+ border: 3px;
+ border-style: ridge;
  box-sizing: border-box;
  padding: 10px;
  text-align: center;
-
+ 
 }
 
 
-.tab:active{
+.tab:target{
     background-color:aliceblue;
 }
 
 .tab:hover{
- background-color: rgb(71, 10, 170);
+ background-color: rgb(57, 18, 121);
 }
 
+
+#firstTab{
+       background-color: rgb(182, 170, 206);
+   }
