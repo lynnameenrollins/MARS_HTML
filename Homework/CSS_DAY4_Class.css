@@ -1,0 +1,75 @@
+
+.parent{
+       border: 5px rgb(9, 9, 56) dotted;
+       height: 40px;
+}
+.box{
+    /* display and float work similarly */
+    /* display: inline-block; */
+    float: left;
+    background: rgb(122, 69, 69);
+    height: 100%;
+    width: 20%;
+    border: 1px;
+}
+
+.box:hover{
+    background-color: coral;
+}
+#two{
+    background: rgb(37, 83, 37);
+    top: 20px;
+    left: 20px;
+    position:relative;
+        
+}
+
+
+.overflow{
+    background-color: darkcyan;
+    border: 3px solid;
+    width: 200px;
+    height: 100px;
+    overflow: auto;
+}
+
+img{
+    width: 175px;
+    height: 150px;
+    float:right;
+    padding: 15px;
+}
+
+#div4{
+    float: left;
+    padding: 10px;
+    border: 2px solid;
+}
+
+#div5{
+    padding: 10px;
+    border: 2px solid;
+    /* float along with clear can achieve top and bottom alignment */
+    clear: left;
+}
+
+#noclear{
+    border: 2px solid;
+    overflow: auto;
+}
+
+#img1{
+    position: absolute;
+    left:0px;
+    z-index: -1;
+}
+
+#box1{
+    margin-top: 120px;
+    /* box below has total width of 222px without box sizing */
+    border: 2px solid;
+    padding:20px;
+    width: 200px;
+    /* box-sizing will keep it to set widht (200 px) */
+    box-sizing: border-box;
+}
