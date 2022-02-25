@@ -74,3 +74,104 @@ img{
     /* box-sizing will keep it to set widht (200 px) */
     box-sizing: border-box;
 }
+
+/* Day 5 css styling */
+
+.container{
+    padding: 1em;
+}
+
+.cell{
+    background-color: lightgreen;
+    padding: 1em;
+}
+
+.flex{
+    display: flex;
+    gap: 1em;
+    flex-wrap:nowrap;
+}
+
+.flex > .cell{
+    flex-grow: 2;
+}
+
+.flex > .cell:nth-child(2){
+    flex-grow: 4;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr; /* fr stand for fraction, can also use % */
+    gap: 1em;
+    /*grid-template-columns: repeat( autofit, min3, 1 fr); */
+}
+
+#animation1 {
+    width: 200px;
+    height: 100px;
+    position:relative;
+    background-color: blue;
+    animation-name: my-animation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes my-animation {
+    /* from{background-color:blue;}
+    to{background-color:green;} */
+    0%{background-color:blue;}
+    25%{background-color:green;}
+    50%{background-color:rgb(128, 0, 122);}
+    100%{background-color:rgb(215, 230, 9);}
+    
+}
+
+#animation2 {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(59, 59, 110);
+    animation-name: new-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes new-animation{
+    from{left:0px;}
+    to{left:300px;}
+}
+#div11{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(115, 115, 172);
+    animation-timing-function: linear;
+}
+
+#div22{
+    animation-timing-function: ease;
+}
+#div33{
+    animation-timing-function: ease-in;
+}
+#div44{
+    animation-timing-function: ease-in-out;
+}
+#div55{
+    animation-timing-function: ease-out;
+}
+/* media query will realign into columns if screen size goes below minimum */
+/* @media (min-width:600px) {
+    .grid{grid-template-columns: repeat(3, 1 fr);}
+}
+
+@media(min-width:800px){
+    body{
+        background-color: darksalmon;
+    } */
+
+
+    
+div {
+   border-radius: ;
+   background-size: ;
+   transform: r;
+}

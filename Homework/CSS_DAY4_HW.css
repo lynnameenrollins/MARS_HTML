@@ -22,9 +22,23 @@ a {text-decoration: none;
  
 }
 
+/* .parent > div:hover{
+    background: rgb(27, 3, 65);
+}
+.parent > div:not(:target){
+    background: rgb(117, 86, 167);
+}
 
-.tab:target{
+.parent > div:target{
+    background: rgb(27, 3, 65);
+}  */
+
+.tab:target {
     background-color:aliceblue;
+}
+
+.tab:not(:target){
+    background: rgb(117, 86, 167);
 }
 
 .tab:hover{
