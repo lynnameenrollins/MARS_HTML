@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Java scirpt will execute even before the HTML is executed
+    so this code does not work as intended. -->
+    <p>Before the script ...</p>
+    <script>
+            alert("Executing JavaScript from within HTML ...")
+    </script>
+    <p>After the script</p>
+
+    <p id="textid"> Second attempt, before the script ...</p>
+    <br>
+    <label>User name:</label>
+    
+    <input type="text" id="username" size="20" label=><br>
+    <label>Password:</label>
+    <input type="password" id="PW" size ="20"><br>
+    <button onclick="changeColor()">Click Here</button><br><br>
+    First <input type="number" id="firstNumber" size="10"><br>
+    Second <input type="number" id="secondNumber" size="10"><br>
+    <button onclick ="addNumber()">Add</button><br>
+    Sum <input type="number" id="sum" size="10"><br>
+    
+</body>
+
+<script>
+    // console.log(alert("Executing JavaScript from within HTML ..."))
+    function changeColor(){
+    
+        document.body.style.backgroundColor="cyan";
+        document.getElementById("textid").innerHTML = "After the Button Clicked";
+        
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("PW").value;
+        
+        if(username == "" || password == ""){
+            alert("you must include a user name and password")
+        }    
+        else{
+            alert('hello ' + username)
+        }
+    
+    function addNumber(){
+        alert('Here I am')
+        var a, b, c;
+        var a = Number(document.getElementById(firstNumber).value);
+        var b = Number(document.getElementById(firstNumber).value);
+        
+        alert('a + b = ' +c);
+
+    }
+    
+</script>
+</html>

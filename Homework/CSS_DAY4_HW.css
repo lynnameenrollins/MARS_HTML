@@ -25,36 +25,18 @@ a {text-decoration: none;
  
 }
 
-.parent > div:not(target){
-    border-bottom: 0;
-    background: rgb(117, 86, 167);
-}
 
-.parent > div:target 
-  {
-    background: rgb(172, 5, 5);
-    position: absolute;
-    z-index: 1;
-  }
+
+
   
-.parent > div:hover{
+.tab:hover{
     background: rgb(27, 3, 65);
 }
 
-
-
-
-/* .tab:target {
-    background-color:aliceblue;
+.tab:active{
+    background-color:brown;
 }
 
-.tab:not(:target){
-    background: rgb(117, 86, 167);
-}
-
-.tab:hover{
- background-color: rgb(57, 18, 121);
-} */
 
 
 #firstTab{
