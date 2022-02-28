@@ -14,24 +14,33 @@ h1{
 
 #answerDisplay{
     /* background-color:darkblue; */
+   padding: 2em;
+   font-size: x-large;
 }
 
 .container{
     display: flex;
-    width: 100% ;
+    width: 100%;
     float: left;
     border: solid 5px rgb(9, 30, 44);
     text-align: center;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: stretch;
-    padding: 1em;
+    /* align-items: stretch; */
+    padding: 2em;
+
+
 }
 
 .container button {
     display: inline-block;
-    size: 25% 25% 25% 25%;
     background-color: rgb(43, 220, 226);
     width: 25% ;
+    color:rgb(13, 53, 54);
+    text-shadow: 2px 2px 5px;
+    border-radius:  1em;
+    
 
 }
+
+
