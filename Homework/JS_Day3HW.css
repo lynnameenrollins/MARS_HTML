@@ -1,6 +1,7 @@
 *{
     background-color: #eed0e5;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 h1{
@@ -8,6 +9,10 @@ h1{
     color:#581845
 }
 
+h2{
+    text-align: center;
+    color:#581845;
+}
 
 .container{
     display: flex;
@@ -21,21 +26,18 @@ h1{
 
 }
 
-.p{
-    font-size: larger;
-    text-align: center;
-}
 
 #guessButton{
     background-color: #581845;
     width: 40% ;
     height: 5em;
     color:black;
-    text-shadow: 2px 2px 5px;
+    font-size: larger;
+    text-shadow: 1px 1px 4px white;
     border-radius:  1em;
     text-align: center;
-    margin-left: 25%;
-    
+    position: relative;
+    left: 20%
 }
 
 #playAgain{
@@ -43,10 +45,12 @@ h1{
     width: 40% ;
     height: 5em;
     color:black;
-    text-shadow: 2px 2px 5px;
+    text-shadow: 1px 1px 4px white;
     border-radius:  1em;
     text-align: center;
     margin-left: 25%;
+    position: relative;
+    left: 20%
     
 }
 

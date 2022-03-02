@@ -18,26 +18,26 @@
         <p> What's your guess? <input type="number" id="guess" size="20"><br>
        <div id ="buttonDivision">
             <button type="button" id ="guessButton" onclick="checkGuess()">Guess</button><br><br>
-            <button type="button" id ="playAgain" onclick="playAgain()">Play Again!</button><br><br>
+            <button type="button"  id ="playAgain" onclick="playAgain()">Play Again!</button><br><br>
         </div>
     </div> 
     </div>     
     
     <div class = "container">
     <div id="correctGuess" >
-        <p>
+        <h2>
         It took you  <span 
         id="numGuesses">0</span> guesses!
-        </p>
+        </h2>
         <br>
         
     </div>
     
     <div id="wrongGuess" >
-        <p>
+        <h2>
         Sorry that is not it! Guess Again!
         </p>
-        <br>
+        <h2>
     </div>
     </div>
 
@@ -62,6 +62,7 @@
     function checkGuess(){
         var guess = Number(document.getElementById("guess").value); 
         count++;
+        
         if (guess == LUCKYNUMBER){
                 document.getElementById("numGuesses").value = count;
                 correct.style.display ='block'
