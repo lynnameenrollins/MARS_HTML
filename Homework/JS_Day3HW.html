@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="JS_Day3HW.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>JS Day Three Homework</title>
+</head>
+<body>
+
+    <h1>Guess My Lucky Number</h1>
+    <div class = "container">
+    <div id="inputDisplay">
+        <p>Let's see how good you are at mind reading!</p>
+        <p>Can you guess my lucky number between 1 and 10??</p>
+        <p> What's your guess? <input type="number" id="guess" size="20"><br>
+       <div id ="buttonDivision">
+            <button type="button" id ="guessButton" onclick="checkGuess()">Guess</button><br><br>
+            <button type="button" id ="playAgain" onclick="playAgain()">Play Again!</button><br><br>
+        </div>
+    </div> 
+    </div>     
+    
+    <div class = "container">
+    <div id="correctGuess" >
+        <p>
+        It took you  <span 
+        id="numGuesses">0</span> guesses!
+        </p>
+        <br>
+        
+    </div>
+    
+    <div id="wrongGuess" >
+        <p>
+        Sorry that is not it! Guess Again!
+        </p>
+        <br>
+    </div>
+    </div>
+
+</body>
+
+<script>
+    // const  LUCKYNUMBER = 3; 
+    //I wanted to try out randomized
+    var LUCKYNUMBER = Math.floor(Math.random()*10) + 1
+    var count = 0;
+    var btn = document.getElementById("guessButton");
+    var disp = document.getElementById("numGuesses");
+    var play = document.getElementById("playAgain");
+    var correct = document.getElementById("correctGuess");
+    var wrong = document.getElementById("wrongGuess");
+    
+    
+    correct.style.display ='none'
+    wrong.style.display = "none"
+    play.style.display = "none"
+    
+    function checkGuess(){
+        var guess = Number(document.getElementById("guess").value); 
+        count++;
+        if (guess == LUCKYNUMBER){
+                document.getElementById("numGuesses").value = count;
+                correct.style.display ='block'
+                wrong.style.display = "none"
+                //reset game
+                btn.style.display = 'none'
+                play.style.display = 'block'
+                LUCKYNUMBER = Math.floor(Math.random()*10) + 1
+        }
+        else{
+            wrong.style.display = 'block'
+            
+        }
+    
+        disp.innerHTML = count; 
+
+    }
+    function playAgain(){
+    
+        btn.style.display = 'block'
+        play.style.display = 'none'
+        correct.style.display ='none'
+        wrong.style.display = "none"
+    
+        count = 0;
+    }
+
+
+
+  
+    
+</script>
+</html>

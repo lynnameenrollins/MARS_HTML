@@ -1,0 +1,53 @@
+*{
+    background-color: rgb(226, 226, 220);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    color:#581845
+}
+
+
+.container{
+    display: flex;
+    width: 100%;
+    float: left;
+    border: solid 5px #581845;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 1em;
+
+}
+
+.p{
+    font-size: larger;
+    text-align: center;
+}
+
+#guessButton{
+    background-color: #581845;
+    width: 40% ;
+    height: 5em;
+    color:black;
+    text-shadow: 2px 2px 5px;
+    border-radius:  1em;
+    text-align: center;
+    margin-left: 25%;
+    
+}
+
+#playAgain{
+    background-color: #C70039;
+    width: 40% ;
+    height: 5em;
+    color:black;
+    text-shadow: 2px 2px 5px;
+    border-radius:  1em;
+    text-align: center;
+    margin-left: 25%;
+    
+}
+
+
