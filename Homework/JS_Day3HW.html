@@ -18,7 +18,7 @@
         <p> What's your guess? <input type="number" id="guess" size="20"><br>
        <div id ="buttonDivision">
             <button type="button" id ="guessButton" onclick="checkGuess()">Guess</button><br><br>
-            <button type="button"  id ="playAgain" onclick="playAgain()">Play Again!</button><br><br>
+            
         </div>
     </div> 
     </div>     
@@ -50,7 +50,6 @@
     var count = 0;
     var btn = document.getElementById("guessButton");
     var disp = document.getElementById("numGuesses");
-    var play = document.getElementById("playAgain");
     var correct = document.getElementById("correctGuess");
     var wrong = document.getElementById("wrongGuess");
     
@@ -67,32 +66,29 @@
                 document.getElementById("numGuesses").value = count;
                 correct.style.display ='block'
                 wrong.style.display = "none"
+                btn.innerHTML = 'Play Again'
+                btn.style.backgroundColor='#C70039';
                 //reset game
-                btn.style.display = 'none'
-                play.style.display = 'block'
                 LUCKYNUMBER = Math.floor(Math.random()*10) + 1
+        }
+        else if(btn.innerHTML === 'Play Again'){
+            correct.style.display ='none';
+            wrong.style.display = "none";
+            btn.innerHTML = 'Guess';
+            btn.style.backgroundColor = '#581845';
+            document.getElementById('guess').value = "";
+            count = 0;
+            //document.getElementsByClassName('container')[1].style.visibility = 'hidden';
         }
         else{
             wrong.style.display = 'block'
-            
+                
         }
     
         disp.innerHTML = count; 
 
     }
-    function playAgain(){
-    
-        btn.style.display = 'block'
-        play.style.display = 'none'
-        correct.style.display ='none'
-        wrong.style.display = "none"
-    
-        count = 0;
-    }
-
-
-
-  
+      
     
 </script>
 </html>

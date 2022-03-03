@@ -37,21 +37,11 @@ h2{
     border-radius:  1em;
     text-align: center;
     position: relative;
-    left: 20%
-}
-
-#playAgain{
-    background-color: #C70039;
-    width: 40% ;
-    height: 5em;
-    color:black;
-    text-shadow: 1px 1px 4px white;
-    border-radius:  1em;
-    text-align: center;
-    margin-left: 25%;
-    position: relative;
+    /* position:fixed; */
     left: 20%
     
 }
+
+
 
 

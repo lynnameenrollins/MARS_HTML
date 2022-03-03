@@ -95,4 +95,68 @@ console.log(text.substr(1,4))
 random_number = Math.floor(Math.random()*10) + 1
 console.log(random_number)
 
+//arrays
+let names = ['John', 'Mike', 'Peter', 'Kevin'];
+console.log(names)
+console.log(names[1])
+console.log('Array length ' + names.length)
 
+for (i=0; i< names.length;i++){
+    //To skip based on some condition
+    if (names[i].startsWith('P')){
+        continue;
+    }
+    console.log(names[i])
+}
+
+console.log(names)
+console.log(names.pop())
+console.log('After pop ' + names)
+
+console.log(names.push('Mary')) //note this returns the length of the array
+
+console.log('After push ' + names)
+
+console.log(names)
+console.log(names.shift())
+console.log('After shift ' + names)
+
+console.log(names.unshift('Carrie')) //note this returns the length of the array
+
+console.log('After unshift ' + names)
+
+console.log(names.slice(1,3));
+
+let newNames = names;
+newNames.push('Sarah')
+console.log('See how we changed names too!!(pointing to same array in memory!): ' + names)
+
+//in returns index values!
+for (let name in names){
+    console.log(name);
+}
+
+//of returns index values!
+for (let name of names){
+    console.log(name);
+}
+
+//bug in javascript
+names[23] = 'Lynn'
+console.log(names.length)
+console.log(names[10])
+console.log(names)
+
+let arr = [1,2,3,4,5]
+console.log(arr.length)
+arr.length = 2
+arr.length = 5
+console.log(arr.length)
+console.log('See what happens after I messed with the lenght! ' + arr)
+
+let hello = function(){
+    console.log('Hello')
+}
+
+console.log(typeof hello)
+hello();
