@@ -11,35 +11,33 @@
 <body>
 
     <h1>Guess My Lucky Number</h1>
-    <div class = "container">
+   
     <div id="inputDisplay">
         <p>Let's see how good you are at mind reading!</p>
         <p>Can you guess my lucky number between 1 and 10??</p>
         <p> What's your guess? <input type="number" id="guess" size="20"><br>
        <div id ="buttonDivision">
             <button type="button" id ="guessButton" onclick="checkGuess()">Guess</button><br><br>
-            
         </div>
     </div> 
-    </div>     
-    
-    <div class = "container">
-    <div id="correctGuess" >
-        <h2>
-        It took you  <span 
-        id="numGuesses">0</span> guesses!
-        </h2>
-        <br>
+ 
+        <div id="correctGuess" >
+            <h2>
+            It took you  <span id="numGuesses">0</span> guess(es)!
+            </h2>
+            <br>
+            
+        </div>
         
-    </div>
-    
-    <div id="wrongGuess" >
-        <h2>
-        Sorry that is not it! Guess Again!
-        </p>
-        <h2>
-    </div>
-    </div>
+        <div id="wrongGuess" >
+            <h2>
+            Sorry that is not it! Guess Again!
+            <h2>
+            <h2>
+            That's <span id="numwrongGuesses">1</span> wrong guess(es)!
+            </h2>
+        </div>
+  
 
 </body>
 
@@ -50,9 +48,9 @@
     var count = 0;
     var btn = document.getElementById("guessButton");
     var disp = document.getElementById("numGuesses");
+    var dispWrong = document.getElementById("numwrongGuesses");
     var correct = document.getElementById("correctGuess");
     var wrong = document.getElementById("wrongGuess");
-    
     
     correct.style.display ='none'
     wrong.style.display = "none"
@@ -70,6 +68,7 @@
                 btn.style.backgroundColor='#C70039';
                 //reset game
                 LUCKYNUMBER = Math.floor(Math.random()*10) + 1
+                disp.innerHTML = count;
         }
         else if(btn.innerHTML === 'Play Again'){
             correct.style.display ='none';
@@ -81,11 +80,13 @@
             //document.getElementsByClassName('container')[1].style.visibility = 'hidden';
         }
         else{
-            wrong.style.display = 'block'
-                
+            wrong.style.display = 'block' 
+            document.getElementById("numwrongGuesses").value = count;
+            dispWrong.innerHTML = count;
+                            
         }
     
-        disp.innerHTML = count; 
+         
 
     }
       

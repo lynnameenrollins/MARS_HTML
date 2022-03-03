@@ -160,3 +160,43 @@ let hello = function(){
 
 console.log(typeof hello)
 hello();
+
+let t = function() {
+   console.log('Arrow function dem')
+}
+
+let t1 = (a, b) => console.log(a + b)
+
+t1( 5, 8);
+
+// use curly brackets if your function needs a body
+let t2 = (a, b) => {
+    c = a+ b;
+    return c;
+}    
+console.log(t2(4,5))
+
+let numbers = [12, 23, 18, 26, 30, 31];
+let evenNumbers = numbers.filter(getEven);
+
+function getEven(num){
+    return num%2 ==0;
+}
+
+console.log('Even numbers: ' + evenNumbers)
+console.log('Original list: ' + numbers)
+
+function getSquared(num){
+    return num*num;
+}
+
+let squaredNum = numbers.map(getSquared);
+console.log('Squared numbers :' + squaredNum)
+
+let sum = numbers.reduce(getSum, 0);
+
+function getSum(total, num){
+    return total + num;
+}
+
+console.log('Sum ' + sum)
