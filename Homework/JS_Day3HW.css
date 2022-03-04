@@ -4,6 +4,7 @@
 
 }
 
+
 h1{
     text-align: center;
     color:#581845
@@ -30,6 +31,10 @@ h2, p{
     
 }
 
+#fillEmpty{
+    background-image: url('lucky_number.jpg');
+    background-repeat: repeat;
+}
 
 
 

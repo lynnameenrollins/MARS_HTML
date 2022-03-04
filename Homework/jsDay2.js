@@ -200,3 +200,16 @@ function getSum(total, num){
 }
 
 console.log('Sum ' + sum)
+
+
+//callback functions
+function myGreeting(myName){
+    console.log('Hello ' + myName)
+}
+
+function processingUserInput(callbackFunction){
+    let name = 'Lynn'
+    callbackFunction(name)
+}
+
+processingUserInput(myGreeting)
