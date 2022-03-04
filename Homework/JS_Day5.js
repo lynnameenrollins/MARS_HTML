@@ -1,14 +1,13 @@
-var name = document.getElementById("name").value;
-var employeeID = Number(document.getElementById("employeeID").value);
-var joiningDate = document.getElementById("joiningDate").value;
-var hoursWorked = document.getElementById("hourWorked").value;
-var designation = document.getElementById('designation').value;
-
-
 function processForm(){
+        
+    var name = document.getElementById("name").value;
+    var employeeID = Number(document.getElementById("employeeID").value);
+    var joiningDate = document.getElementById("joiningDate").value;
+    var hoursWorked = Number(document.getElementById("hoursWorked").value);
+   
+    var designation = document.getElementById('designation').value;
 
-
-    alert('In process Form')
+    
     function Employee(name, employeeID, joiningDate, hoursWorked, designation){
         this.name = name;
         this.employeeID = employeeID;
@@ -18,20 +17,20 @@ function processForm(){
     }
 
     let employee1 = new Employee(name,employeeID,joiningDate,hoursWorked, designation)
-
-    if (designation =="Manager"){
+    
+    if (designation =="manager"){
         var pay = employee1.hoursWorked * 90;
-        return pay;
+        // alert('Pay for ' + employee1.name + ' is: ' + pay)
     }
-    else if (designation == "Consultant"){
+    else if (designation == "consultant"){
         var pay = employee1.hoursWorked * 75;
-        return pay;
+        // alert('Pay for ' + employee1.name + ' is: ' + pay)
     }
     else{
         var pay = employee1.hoursWorked * 45;
-        return pay;
+        // alert('Pay for ' + employee1.name + ' is: ' + pay)
     }
 
-    document.getElementById("pay").value = pay;
+    sessionStorage.setItem("Employee Name", employee1.name)
+    sessionStorage.setItem("Pay", pay)
 }
-
