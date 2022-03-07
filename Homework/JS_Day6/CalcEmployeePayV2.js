@@ -1,19 +1,24 @@
-// var today = new Date();
-// var dd = today.getDate();
-// var mm = today.getMonth() + 1; //January is 0!
-// var yyyy = today.getFullYear();
-// today = yyyy + '-' + mm + '-' + dd;
 
-//This seems like it should work, but I cannot get it to work!
-var today = new Date();
-today.getDate()
-console.log(today)
-// document.getElementById("joiningDate").setAttribute("max", today);
-console.log("Today: " + today)
+function maxDate()
+{
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1; //January is 0!
+    var yyyy = today.getFullYear();
 
+    if (dd< 10){
+        dd = '0' + dd;
+    }
 
-
-
+    if (mm < 10){
+        mm = "0" + mm;
+    }
+    today = yyyy + '-' + mm + '-' + dd;
+    
+    let myDate = document.getElementById('joiningDate')
+    myDate.setAttribute('max', `${today}`);
+}    
+maxDate();
 
 function processForm(){
         
@@ -23,7 +28,6 @@ function processForm(){
     var hoursWorked = Number(document.getElementById("hoursWorked").value);
     var designation = document.getElementById('designation').value;
 
-  
     
    
     class Employee{
