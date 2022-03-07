@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script src='day6_This_ObjectPrototype_Class.js'></script> -->
+<p id = my_el>Paragraph</p>
+<script>   
+    const el = document.getElementById('my_el');
+    el.addEventListener ('click', function(){
+        console.log(this.innerHTML);
+    });
+
+    let employee = {
+        name:'Lynn',
+        age: 34,
+        salary: 10000
+    }
+
+    let manager = {
+        location: "headquarters",
+        verticle:"Telecom"
+    }
+
+    manager.__proto__ = employee;
+    console.log(manager.salary);
+    console.log(manager);
+</script> 
+</body>
+</html>

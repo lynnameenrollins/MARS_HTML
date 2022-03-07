@@ -34,3 +34,4 @@ function processForm(){
     sessionStorage.setItem("Employee Name", employee1.name)
     sessionStorage.setItem("Pay", pay)
 }
+
