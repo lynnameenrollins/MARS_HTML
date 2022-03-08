@@ -1,0 +1,1 @@
+(function (a){console.log("Immediately invoked function, a^2 = " + a*a)})(10);

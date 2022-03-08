@@ -1,24 +1,29 @@
 
-function maxDate()
-{
-    var today = new Date();
-    var dd = today.getDate();
-    var mm = today.getMonth() + 1; //January is 0!
-    var yyyy = today.getFullYear();
+// function maxDate()
+// {
+//     var today = new Date();
+//     var dd = today.getDate();
+//     var mm = today.getMonth() + 1; //January is 0!
+//     var yyyy = today.getFullYear();
 
-    if (dd< 10){
-        dd = '0' + dd;
-    }
+//     if (dd< 10){
+//         dd = '0' + dd;
+//     }
 
-    if (mm < 10){
-        mm = "0" + mm;
-    }
-    today = yyyy + '-' + mm + '-' + dd;
+//     if (mm < 10){
+//         mm = "0" + mm;
+//     }
+//     today = yyyy + '-' + mm + '-' + dd;
     
-    let myDate = document.getElementById('joiningDate')
-    myDate.setAttribute('max', `${today}`);
-}    
-maxDate();
+//     let myDate = document.getElementById('joiningDate')
+//     myDate.setAttribute('max', `${today}`);
+// }    
+// maxDate();
+
+
+//Mahendra's way to set Date
+let today = new Date().toISOString().split('T')[0];
+document.getElementById("joiningDate").setAttribute('max', today);
 
 function processForm(){
         
