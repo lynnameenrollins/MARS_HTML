@@ -60,8 +60,7 @@ function loadQandA(){
     b3.innerHTML = a3;
     b4.innerHTML = correct;
     
-    b1.addEventListener('click', nofocus)
-
+    
     //randomize correct answer position
     var correctAnswerPosition = Math.floor(Math.random()*4) + 1
     
