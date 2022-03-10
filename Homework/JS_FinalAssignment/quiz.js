@@ -1,4 +1,5 @@
 
+
 function wrongAnswer(clicked_id){
     console.log("Here in wrongAnswer")
     let btn = document.getElementById(clicked_id)
@@ -15,7 +16,8 @@ function correctAnswer(clicked_id){
        
     //enable Next button 
     document.getElementById("next").disabled = false;
-        
+    count +=1;
+    console.log("Number of correct answers: " + count)    
 }
 
 function getNextQuestion(){
@@ -32,18 +34,30 @@ function getNextQuestion(){
 }
 
 function loadQandA(){
-    //loads the next question from a list of questions
+    
+    //WRITE LATER: If there are still more questions, load the next one.
+    //otherwise, end the quiz and display score
 
+    //loads the next question from a list of questions
 
     let {questionNo, question, a1, a2, a3, correct} = questionBank.pop()
     dispQuestion.innerHTML = question
+
+    b1.innerHTML = a1;
+    b2.innerHTML = a2;
+    b3.innerHTML = a3;
+    b4.innerHTML = correct;
+    
     //randomize correct answer position
     var correctAnswerPosition = Math.floor(Math.random()*4) + 1
+    
+    b1.style.order = 2
+    b2.style.order = 3
+    b3.style.order = 4
+    b4.style.order = correctAnswerPosition
 
-            b1.innerHTML = a1;
-            b2.innerHTML = a2;
-            b3.innerHTML = a3;
-            b4.innerHTML = correct;
+   
+
               
 }
 
@@ -130,6 +144,7 @@ class QuestionBank{
     var b2 = document.getElementById("2") 
     var b3 = document.getElementById("3") 
     var b4 = document.getElementById("4") 
+    var count = 0 //to keep track of correct answers
     loadQandA()
     console.log(questionBank)
     

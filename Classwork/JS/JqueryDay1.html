@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script   src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <!-- reference: https://learn.jquery.com/ -->
+    <h1>Practising JQuery</h1>
+    <p>Click here</p>
+    <button id="Display">Display</button>
+    <script>
+        // $(document).ready(function(){
+        //     $("p").text("Jquery in action on load");
+        // })
+        $("#Display").click(function(){
+            $("p").text("Jquery in action");
+        })
+        // $("#Display").hover(
+        //     $("#Display").
+        // )
+        var greeting1='HI';
+
+        var messenger = {
+            greeting1:'Hello'
+        }
+
+        function say(name){
+            console.log(this.greeting1+ ' '+name);
+        }
+
+        //On node the output is "undefined John"
+        //In browser, the global greeting1 variable will be used
+        //broswer output is "HI John";
+        say.call(this,"John");
+        say.call(messenger,"John");
+    </script>
+</body>
+</html>
