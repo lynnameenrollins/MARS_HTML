@@ -1,5 +1,4 @@
 
-
 function wrongAnswer(clicked_id){
     console.log("Here in wrongAnswer")
     let btn = document.getElementById(clicked_id)
@@ -7,6 +6,7 @@ function wrongAnswer(clicked_id){
        
     //enable Next button 
     document.getElementById("next").disabled = false;
+   
         
 }
 function correctAnswer(clicked_id){
@@ -60,6 +60,8 @@ function loadQandA(){
     b3.innerHTML = a3;
     b4.innerHTML = correct;
     
+    b1.addEventListener('click', nofocus)
+
     //randomize correct answer position
     var correctAnswerPosition = Math.floor(Math.random()*4) + 1
     
@@ -68,9 +70,7 @@ function loadQandA(){
     b3.style.order = 4
     b4.style.order = correctAnswerPosition
 
-   
-
-              
+            
 }
 
 class QuestionBank{
@@ -156,6 +156,9 @@ class QuestionBank{
     var b2 = document.getElementById("2") 
     var b3 = document.getElementById("3") 
     var b4 = document.getElementById("4") 
+
+    
+
     var count = 0 //to keep track of correct answers
     loadQandA()
     

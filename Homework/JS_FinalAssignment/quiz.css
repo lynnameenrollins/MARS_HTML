@@ -25,10 +25,10 @@ button{
     margin: 1%;
 }
 
-
   
 button:hover{
-    background-color: aliceblue;
+    
+    background-color: aliceblue !important;
     
 }
 
@@ -41,6 +41,9 @@ h6{
     margin-top: 3%;
     font-weight: bold;
     
+}
+#next:hover{
+    background-color: rgb(23, 49, 47) !important;
 }
 #finalMessage{
     display: none;
