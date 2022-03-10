@@ -42,4 +42,10 @@ h6{
     font-weight: bold;
     
 }
+#finalMessage{
+    display: none;
+}
+#questionsRight{
+    display: none;
+}
 

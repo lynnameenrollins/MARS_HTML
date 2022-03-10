@@ -29,19 +29,27 @@ function getNextQuestion(){
     b4.style.backgroundColor = '#d4cfd0';
     console.log(Object.keys(questionBank))
     let questionsLeft = Object.keys(questionBank).length
-    if (questionsLeft> 0)
+    if (questionsLeft> 0){
         loadQandA()
-    // else quit the game
+        //then need to disable the next button again
+        
+    }
+    //else quit the game
+    else{
+        let disp1 = document.getElementById("finalMessage")
+        let disp2 = document.getElementById("questionsRight")
+        disp2.innerHTML = "You got " + count + "question(s) correct"
+        disp1.style.display = 'block' 
+        disp2.style.display = 'block'
+            
+    }
     
-    //then need to disable the next button again
     document.getElementById("next").disabled = true;
+    
 }
 
 function loadQandA(){
     
-    //WRITE LATER: If there are still more questions, load the next one.
-    //otherwise, end the quiz and display score
-
     //loads the next question from a list of questions
 
     let {questionNo, question, a1, a2, a3, correct} = questionBank.pop()
