@@ -27,8 +27,12 @@ function getNextQuestion(){
     b2.style.backgroundColor = '#d4cfd0';
     b3.style.backgroundColor = '#d4cfd0';
     b4.style.backgroundColor = '#d4cfd0';
-    loadQandA()
-
+    console.log(Object.keys(questionBank))
+    let questionsLeft = Object.keys(questionBank).length
+    if (questionsLeft> 0)
+        loadQandA()
+    // else quit the game
+    
     //then need to disable the next button again
     document.getElementById("next").disabled = true;
 }
@@ -146,7 +150,7 @@ class QuestionBank{
     var b4 = document.getElementById("4") 
     var count = 0 //to keep track of correct answers
     loadQandA()
-    console.log(questionBank)
+    
     
     
     
