@@ -16,13 +16,13 @@
     <h1>Quiz Time!</h1>
     <h6>You must answer the question before being about to move on to the next question.
     </h6>
-    <h5 id = "question">The question will be written in this area. I will update the question using JavaScript.</h5>
-            
-            <button type="button" id="answer1" name="answers" onclick="checkAnswer()">answer one will go here</button>
-            <button type="button" id="answer2" name="answers" onclick="checkAnswer()">answer two will go here</button>
-            <button type="button" id="answer3" name="answers" onclick="checkAnswer()">answer three will go here</button>
-            <button type="button" id="answer4" name="answers" onclick="checkAnswer()">answer four will go here</button>
-
+    <h5 id = "questionText">The question will be written in this area. I will update the question using JavaScript.</h5>
+            <div id = "box">
+            <button type="button" id="1" name="answers" onclick="wrongAnswer(this.id)">answer one will go here</button>
+            <button type="button" id="2" name="answers" onclick="wrongAnswer(this.id)">answer two will go here</button>
+            <button type="button" id="3" name="answers" onclick="wrongAnswer(this.id)">answer three will go here</button>
+            <button type="button" id="4" name="answers" onclick="correctAnswer(this.id)">answer four will go here</button>
+            </div>    
             
 </div>
 <div>

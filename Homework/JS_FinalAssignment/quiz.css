@@ -8,15 +8,25 @@ h1{
 }
 
 button{
-    background-color: lightgrey;
+    background-color: #d4cfd0;
     /* inline-size: 32%; */
     height:4rem;
     width: 90%;
     margin-left: 8%;
     margin: 1%;
+    
     /* font-weight: bold; */
 }
 
+.box {
+    display: flex;
+    flex-direction: row;
+  }
+  .box :nth-child(1) { order: 4; }
+  .box :nth-child(2) { order: 3; }
+  .box :nth-child(3) { order: 2; }
+  .box :nth-child(4) { order: 1; }
+  
 button:hover{
     background-color: aliceblue;
     
@@ -33,3 +43,4 @@ h6{
     font-weight: bold;
     
 }
+
