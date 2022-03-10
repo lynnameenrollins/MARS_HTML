@@ -38,7 +38,7 @@ function getNextQuestion(){
     else{
         let disp1 = document.getElementById("finalMessage")
         let disp2 = document.getElementById("questionsRight")
-        disp2.innerHTML = "You got " + count + "question(s) correct"
+        disp2.innerHTML = "You got " + count + " question(s) correct"
         disp1.style.display = 'block' 
         disp2.style.display = 'block'
             
