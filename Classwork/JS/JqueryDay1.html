@@ -10,10 +10,28 @@
 </head>
 <body>
     <!-- reference: https://learn.jquery.com/ -->
-    <h1>Practising JQuery</h1>
-    <p>Click here</p>
-    <button id="Display">Display</button>
+    <h1>Home page</h1>
+    
+    <button onclick = "getData()">Get Data</button>
+
     <script>
+
+        function getData(){
+            $.ajax({
+                url:'https://gorest.co.in/public/v2/users',
+                type: 'GET',
+                data: {key:'value'},
+                success:function(data){
+                    console.log(data);
+                },
+                error: function(error){
+                        console.log(error);
+                    
+                }
+            })
+        }
+    </script>
+    <!-- <script>
         // $(document).ready(function(){
         //     $("p").text("Jquery in action on load");
         // })
@@ -38,6 +56,6 @@
         //broswer output is "HI John";
         say.call(this,"John");
         say.call(messenger,"John");
-    </script>
+    </script> -->
 </body>
 </html>
